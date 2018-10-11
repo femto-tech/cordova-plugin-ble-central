@@ -10,8 +10,8 @@
     <license>Apache 2.0</license>
     <keywords>bluetooth, BLE, bluetooth low energy, bluetooth smart</keywords>
 
-    <repo>https://github.com/pni-ciklum/cordova-plugin-ble-central.git</repo>
-    <issue>https://github.com/pni-ciklum/cordova-plugin-ble-central/issues</issue>
+    <repo>https://github.com/iconservo/cordova-plugin-ble-central.git</repo>
+    <issue>https://github.com/iconservo/cordova-plugin-ble-central/issues</issue>
 
     <js-module src="www/ble.js" name="ble">
         <clobbers target="ble" />
