@@ -25,7 +25,7 @@
             </feature>
         </config-file>
 
-        <pods-config ios-min-version="8.0" use-frameworks="true"/>
+        <pods-config ios-min-version="8.0" use-frameworks="false"/>
         <header-file src="src/ios/BLECentralPlugin.h" target-dir="BLECentralPlugin" />
         <source-file src="src/ios/BLECentralPlugin.m" target-dir="BLECentralPlugin" />
 
