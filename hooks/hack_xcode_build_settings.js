@@ -42,6 +42,7 @@ module.exports = function(context) {
     fs.chmodSync(patchBuildJs,0o775)
     replace({regex: "[^/](.\-xcconfig.*xcconfig.*xcconfig)", replacement: "//$1", paths: [patchBuildJs]});
     replace({regex: "(customArgs.configuration_build_dir.*)(CONFIGURATION_BUILD_DIR)", replacement: "$1SYMROOT", paths: [patchBuildJs]});
+    replace({regex: "[^/](customArgs.shared_precomps_dir)", replacement: "//$1", paths: [patchBuildJs]});
 
     let patchZipSwift = path.join(platformPath, 'Pods','Zip','Zip','Zip.swift');
     console.log("patching zip.swift: " + patchZipSwift);
