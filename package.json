@@ -28,6 +28,10 @@
   ],
   "author": "Don Coleman <don.coleman@gmail.com>",
   "license": "Apache-2.0",
+  "dependencies": {
+    "xcode": "^0.9.1",
+    "replace": "^1.0.0"
+  },
   "bugs": {
     "url": "https://github.com/iconservo/cordova-plugin-ble-central/issues"
   },
