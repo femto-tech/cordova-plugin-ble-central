@@ -21,7 +21,8 @@
 
 #import <Cordova/CDV.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import <iOSDFULibrary/iOSDFULibrary-Swift.h>
+//#import <iOSDFULibrary/iOSDFULibrary-Swift.h>
+@import iOSDFULibrary;
 #import "BLECommandContext.h"
 #import "CBPeripheral+Extensions.h"
 

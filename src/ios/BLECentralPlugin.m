@@ -18,7 +18,8 @@
 
 #import "BLECentralPlugin.h"
 #import <Cordova/CDV.h>
-#import <iOSDFULibrary/iOSDFULibrary-Swift.h>
+//#import <iOSDFULibrary/iOSDFULibrary-Swift.h>
+@import iOSDFULibrary;
 
 @interface BLECentralPlugin() {
     NSDictionary *bluetoothStates;
