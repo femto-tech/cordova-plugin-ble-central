@@ -44,9 +44,11 @@ module.exports = function(context) {
     replace({regex: "(customArgs.configuration_build_dir.*)(CONFIGURATION_BUILD_DIR)", replacement: "$1SYMROOT", paths: [patchBuildJs]});
     replace({regex: "[^/](customArgs.shared_precomps_dir)", replacement: "//$1", paths: [patchBuildJs]});
 
+/*
     let patchZipSwift = path.join(platformPath, 'Pods','Zip','Zip','Zip.swift');
     console.log("patching zip.swift: " + patchZipSwift);
     fs.chmodSync(patchZipSwift,0o775)
     replace({regex: "(FileAttributeKey.creationDate) : ", replacement: "$1.rawValue :", paths: [patchZipSwift]});
     replace({regex: "(FileAttributeKey.modificationDate) : ", replacement: "$1.rawValue :", paths: [patchZipSwift]});
+*/
 }
