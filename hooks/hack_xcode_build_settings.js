@@ -27,8 +27,8 @@ module.exports = function(context) {
       if (!COMMENT_KEY.test(configName)) {
         let buildConfig = buildConfigs[configName];
         if (typeof xcodeProject.getBuildProperty('SWIFT_VERSION', buildConfig.name) === 'undefined') {
-          xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
-          console.log('Update SWIFT version to 3.0', buildConfig.name);
+          xcodeProject.updateBuildProperty('SWIFT_VERSION', '4.2', buildConfig.name);
+          console.log('Update SWIFT version to 4.2', buildConfig.name);
           modified = true;
         }
       }
