@@ -24,7 +24,7 @@ For using this plugin on iOS, there are some additional requirements:
 
 # Installing
 
-    $ cordova plugin add https://github.com/pni-ciklum/cordova-plugin-ble-central.git
+    $ cordova plugin add https://github.com/femto-tech/cordova-plugin-ble-central.git
 
 # Extended API
 
