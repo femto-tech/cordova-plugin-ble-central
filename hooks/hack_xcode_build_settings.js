@@ -27,8 +27,8 @@ module.exports = function(context) {
       if (!COMMENT_KEY.test(configName)) {
         let buildConfig = buildConfigs[configName];
         if (typeof xcodeProject.getBuildProperty('SWIFT_VERSION', buildConfig.name) === 'undefined') {
-          xcodeProject.updateBuildProperty('SWIFT_VERSION', '3.0', buildConfig.name);
-          console.log('Update SWIFT version to 3.0', buildConfig.name);
+          xcodeProject.updateBuildProperty('SWIFT_VERSION', '4.2', buildConfig.name);
+          console.log('Update SWIFT version to 4.2', buildConfig.name);
           modified = true;
         }
       }
@@ -44,9 +44,11 @@ module.exports = function(context) {
     replace({regex: "(customArgs.configuration_build_dir.*)(CONFIGURATION_BUILD_DIR)", replacement: "$1SYMROOT", paths: [patchBuildJs]});
     replace({regex: "[^/](customArgs.shared_precomps_dir)", replacement: "//$1", paths: [patchBuildJs]});
 
+/*
     let patchZipSwift = path.join(platformPath, 'Pods','Zip','Zip','Zip.swift');
     console.log("patching zip.swift: " + patchZipSwift);
     fs.chmodSync(patchZipSwift,0o775)
     replace({regex: "(FileAttributeKey.creationDate) : ", replacement: "$1.rawValue :", paths: [patchZipSwift]});
     replace({regex: "(FileAttributeKey.modificationDate) : ", replacement: "$1.rawValue :", paths: [patchZipSwift]});
+*/
 }
